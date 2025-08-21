@@ -60,23 +60,87 @@
             name="firstname"
             id="name"
             placeholde="E.g.Jamie Smith"
+            required
+            minlength="3"
+            maxlength="50"
+            maxlength="50"
+          />
           />
 
           <br /><br />
+          <label for="email">Your Email:</label>
+          <br />
+          <input type="email" name="email" id="email" required />
+          <br /><br />
+          <label for="phone">Your Phone Number:(e.g:123-456-7897)</label>
+
+          <br />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="123-456-7897"
+            pattern="\d{3}-\d{3}-\d{4}"
+            required
+          />
           <!-- text input for feedback -->
+          <br />
+          <label for="website">Your website</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com"
+            required
+          />
           <label for="feedback">Your Thoughts</label>
 
           <br />
           <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
           <br /><br />
-        <button type="submit">Submit Feedback</button>
+          <p>How would you rate this blog?</p>
+          <input type="radio" name="rating" value="good" id="good" required />
+
+          <label for="good">Good</label>
+          <input
+            type="radio"
+            name="rating"
+            value="neutral"
+            id="neutral"
+            required
+          />
+
+          <label for="neutral">Neutral</label>
+          <input type="radio" name="rating" value="bad" id="bad" required />
+
+          <label for="neutral">Bad</label>
+<br><br>
+
+
+<!-- newsletter sign up -->
+<input type="checkbox" name="newsletter" id="newsletter" value="yes" />
+<label for="newsletter">Sign up for our newletter</label>
+
+<br><br>
+<!-- newsletter topic -->
+ <label for="topic">choose a topic</label>
+ <br>
+ <select name="topic" id="topic">
+
+<option value="">--Please choose an option--</option>
+<option value="general">General</option>
+<option value="suggetions">suggetions</option>
+<option value="questions">Questions</option>
+ </select>
+<br><br>
+          <button type="submit">Submit Feedback</button>
         </form>
       </section>
     </main>
     <footer>
-        <p>
+      <p>
         &copy; 2023 My Blog. All rights reserved.
-        </p>
+      </p>
     </footer>
   </body>
 </html>
